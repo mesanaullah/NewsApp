@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
   font-family: "Roboto","Montserrat", sans-serif;
   cursor: default !important;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar{
@@ -30,4 +33,30 @@ body {
   white-space: nowrap;
   backface-visibility: hidden;
   will-change: transform;
+}
+
+/* .dark {
+  background-color: #1a202c;
+  color: #951a1a;
+}
+
+.dark .some-specific-element {
+  background-color: #2d3748;
+} */
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #1a202c;
+}
+
+/* body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+/* Add dark mode styles for specific elements if needed */
+.dark-mode-element {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }

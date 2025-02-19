@@ -8,6 +8,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import TextToSpeech from "../components/TextToSpeech";
 
 const SinglePostPage = () => {
+
   return (
     <div className="flex flex-col gap-8 mt-8">
       {/* detail */}
@@ -65,7 +66,8 @@ const SinglePostPage = () => {
           </p>
         </div>
         {/* menu */}
-        <div className="px-4 h-max sticky top-20 left-0 right-0 z-50 bg-[#ffff]">
+        <div className="px-4 h-max sticky top-20 left-0 right-0 z-[60] bg-green-700">
+
           {/* <div className="px-4 h-max sticky top-20 left-0 right-0 bg-white z-10"> */}
           <h1 className="mb-4 text-sm font-medium">Author</h1>
           <div className="flex flex-col gap-4">

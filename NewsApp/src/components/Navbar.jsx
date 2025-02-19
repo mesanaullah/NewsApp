@@ -9,7 +9,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className=" bg-[#ffff] sticky top-0 w-full h-16 md:h-20 flex items-center justify-between border-b border-[rgb(230,232,234)]">
+        <div className="sticky top-0 w-full h-16 md:h-20 flex items-center justify-between border-b border-[rgb(230,232,234)]">
             {/* LOGO */}
             <Link to="/" className="flex items-center gap-4 text-2xl font-bold">
                 <img src="LATENT.jpg" className='w-8 h-8' alt="BBC" />
@@ -28,7 +28,7 @@ const Navbar = () => {
             {/* MOBILE LINK LIST */}
 
             <div className >
-                <div className={`w-full h-screen bg-[#ffff] flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"
+                <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"
                     }`} >
                     <Link to="/" className=''><IoHomeSharp className='mt-0.5' /> Home</Link>
                     <Link to="/">World</Link>

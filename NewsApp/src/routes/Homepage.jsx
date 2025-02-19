@@ -7,7 +7,7 @@ import PostList from '../components/PostList';
 
 const Homepage = () => {
     return (
-        <div className='bg-[#fff] py-2 md:px-8 lg:px-16 lx:px-32 2xl:px-64 flex flex-col gap-2'>
+        <div className=' py-2 md:px-8 lg:px-16 lx:px-32 2xl:px-64 flex flex-col gap-2'>
             <div className="flex gap-2">
                 <Link to="/">Home</Link>
                 <span>•</span>
