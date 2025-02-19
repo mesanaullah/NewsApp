@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+body {
+  /* background-color: #4f3030; */
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: "Roboto","Montserrat", sans-serif;
+  cursor: default !important;
+}
+
+.navbar{
+  /* background-color: #523333; */
+  width: 100%;
+  /* border-bottom: 1px solid rgb(230, 232, 234); */
+}
+
+
+.ql-container{
+  border: none !important;
+}
+.ql-toolbar{
+  border: none !important;
+}
+.ql-editor{
+  border: none !important;
+}
+
+
+.magnifier-content {
+  white-space: nowrap;
+  backface-visibility: hidden;
+  will-change: transform;
+}
