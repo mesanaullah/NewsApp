@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
+htm{
+  overflow-x: hidden;
+  position: relative;
+}
 body {
   /* background-color: #4f3030; */
+  position: relative;
   width: 100vw;
   overflow-x: hidden;
   font-family: "Roboto","Montserrat", sans-serif;
@@ -59,4 +64,31 @@ body {
 .dark-mode-element {
   background-color: var(--background-color);
   color: var(--text-color);
+}
+
+.xyz{
+  top:-200px;
+}
+
+@layer utilities {
+  @media (min-width: 765px) and (max-width: 980px) {
+    .hide-between-765-980 {
+      display: none;
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 1024px) and (max-width: 1025px) {
+    .text-responsive-1024-1025 {
+      font-size: 1.5rem; /* Adjust as needed */
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }

@@ -9,7 +9,7 @@ import FloatingActionButton from "../components/FloatingActionButton";
 const MainLayout = () => {
   return (
     <>
-      <div className="navbar px-4 md:px-8 lg:px-16 lx:px-32 2xl:px-64">
+      <div className="min-h-screen navbar px-4 md:px-8 lg:px-16 lx:px-32 2xl:px-64 border-b border-[rgb(230,232,234)]">
         <Navbar />
         <Outlet />
         <TextToSpeech />

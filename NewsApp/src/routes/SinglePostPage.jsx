@@ -66,7 +66,7 @@ const SinglePostPage = () => {
           </p>
         </div>
         {/* menu */}
-        <div className="px-4 h-max sticky top-20 left-0 right-0 z-[60] bg-green-700">
+        <div className="px-4 h-max sticky top-20 left-0 right-0 z-[60]">
 
           {/* <div className="px-4 h-max sticky top-20 left-0 right-0 bg-white z-10"> */}
           <h1 className="mb-4 text-sm font-medium">Author</h1>

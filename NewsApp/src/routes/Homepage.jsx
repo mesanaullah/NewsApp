@@ -17,7 +17,7 @@ const Homepage = () => {
             <div className="flex items-center justify-between">
                 {/* titles */}
                 <Link to="/" className="">
-                    <h1 className="text-[#000] text-2xl md:text-5xl lg:text-5xl font-bold">No income tax for those earning up to Rs 12.75 lakh under New Tax Regime</h1>
+                    <h1 className=" text-2xl md:text-5xl lg:text-5xl font-bold">No income tax for those earning up to Rs 12.75 lakh under New Tax Regime</h1>
                     <p className="mt-8 text-md md:text-xl">
                         The finance minister has raised the limit of income tax rebate from Rs 7 lakh to Rs 12 lakh which essentially means that if an individual has an income of up to Rs 12 lakh, she will have zero tax liability.</p>
                 </Link>
