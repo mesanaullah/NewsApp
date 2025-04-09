@@ -1,5 +1,6 @@
 import express from "express";
-// import {
+import Post from "../models/post.model.js"
+import { getPosts, getPost, createPost } from "../controllers/post.controller.js";
 //   getPosts,
 //   getPost,
 //   createPost,
@@ -12,6 +13,11 @@ import express from "express";
 const router = express.Router();
 
 // router.get("/upload-auth", uploadAuth);
+
+router.get("/", getPosts);
+router.get("/:slug", getPost);
+router.post("/", createPost);
+
 
 // router.get("/", getPosts);
 // router.get("/:slug", increaseVisit, getPost);

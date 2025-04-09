@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
 import { FiLogIn } from "react-icons/fi";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { MdAccountCircle } from "react-icons/md";
 
 
 
@@ -70,6 +71,19 @@ const Navbar = () => {
                 <Link to="/test">Business</Link>
                 <Link to="/test">Sports</Link>
                 <Link to="/test">Entertainment</Link>
+
+                {/* <li className="relative list-none">
+                    <button
+                        className="flex items-center  hover:text-blue-600"
+                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                        <MdAccountCircle className="" /><ChevronDown className="ml-1" size={18} />
+                    </button>
+                    <ul className={`absolute top-16 bg-white rounded shadow-lg w-40 transition-all ${isDropdownOpen ? "block" : "hidden"}`}>
+                        <li><Link to="/test" className="block px-4 py-2 hover:text-blue-600">India</Link></li>
+
+                    </ul>
+                </li> */}
+
                 <SignedOut>
                     <Link to="/login">
                         <button className=" md:flex py-2 px-4 rounded-3xl bg-blue-800 text-white hover:bg-[#4361ee] gap-2"><FiLogIn className='mt-1' />LogIn</button>
