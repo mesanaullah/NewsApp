@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "mongoose": "^8.13.2"
+    "mongoose": "^8.13.2",
+    "svix": "^1.63.1"
   },
   "directories": {
     "lib": "lib"

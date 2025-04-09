@@ -1,26 +1,30 @@
 // import ImageKit from "imagekit";
 import Post from "../models/post.model.js";
-// import User from "../models/user.model.js";
+import User from "../models/user.model.js";
 
 export const getPosts = async (req, res) => {
   const posts = await Post.find()
   res.status(200).json(posts)
-}
+};
 
 export const getPost = async (req, res) => {
   const posts = await Post.findOne({ slug: req.params.slug })
   res.status(200).json(posts)
-}
+};
 
 export const createPost = async (req, res) => {
-  const newPost = await new Post(req.body);
+  const newPost = await new Post(req.body)
 
-  const post = await newPost.save();
+  const post = await newPost.save()
   res.status(200).json("Post has been created")
-}
+  // res.status(200).json(post)
+};
 
-
-
+export const deletePost = async (req, res) => {
+  const post = await Post.findByIdAndDelete(req.params.id)
+  res.status(200).json("Post has been Deleted")
+};
+ 
 // export const getPosts = async (req, res) => {
 //   const page = parseInt(req.query.page) || 1;
 //   const limit = parseInt(req.query.limit) || 2;
