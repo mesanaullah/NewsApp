@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoHomeSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react";
+import { SignedIn, SignedOut, UserButton, useAuth } from "@clerk/clerk-react";
 import { FiLogIn } from "react-icons/fi";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { MdAccountCircle } from "react-icons/md";
@@ -12,6 +12,11 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    // const { getToken } = useAuth()
+    // useEffect(() => {
+    //     getToken().then(token => console.log(token))
+    // }, [])
 
     return (
         <div className="w-full h-16 md:h-20 flex items-center justify-between border-b border-[rgb(230,232,234)]">
