@@ -70,7 +70,6 @@ const FloatingActionButton = () => {
             `;
         }
     };
-
     const handleClickOutside = (event) => {
         if (
             containerRef.current &&

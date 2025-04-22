@@ -58,6 +58,9 @@ const SinglePostPage = () => {
           <p>
             In a big bonanza to all taxpayers with a special focus on the middle class, Finance Minister Nirmala Siatharaman announced a significant cut in tax rates and an increase in rebates. While those with annual taxable income of up to Rs 12 lakh will have no tax liability, those with higher incomes will have savings of up to Rs 1.1 lakh on account of rate rationalization under the new tax regime (NTR).
           </p>
+          {/* {data.content.split("\n").map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))} */}
           <p>
             Under the NTR, the new tax slabs are: nil tax on annual income of up to Rs 4 lakh, 5 per cent on Rs 4 lakh-8 lakh, 10 per cent on Rs 8 lakh-12 lakh, 15 per cent on Rs 12 lakh-16 lakh, 20 per cent on Rs 16 lakh-20 lakh, 25 per cent on Rs 20 lakh-24 lakh, and 30 per cent on annual income above Rs 24 lakh.
           </p>
@@ -138,7 +141,7 @@ const SinglePostPage = () => {
           {/* <TextToSpeech /> */}
         </div>
       </div>
-      <Comments postId="" />
+      <Comments postId={data._id}/>
 
     </div>
 
